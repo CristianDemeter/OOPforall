@@ -1,0 +1,44 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        void ageCheck(int age)
+        {
+            Console.WriteLine("Inserisci la tua eta': ");
+            
+            if (age > 18)
+            {
+                Console.WriteLine($"Hai {age} anni! Hai il permesso di accedere.");
+            }
+            else if (age < 18)
+            {
+                Console.WriteLine($"Hai {age} anni! NON hai il permesso di accedere!");
+            }
+            else
+            {
+                Console.WriteLine("Errore di battitura, controlla bene");
+            }
+        }
+        
+        ageCheck(Convert.ToInt32(Console.ReadLine()));
+
+    }
+    /*         
+    void inserisciDati()
+    {
+        Console.WriteLine("Inserisci il tuo nome: ");
+        string nome = Console.ReadLine();
+        Console.WriteLine(nome);
+
+        Console.WriteLine("Inserisci la tua mail: ");
+        string email = Console.ReadLine();
+        Console.WriteLine(email);
+
+        Console.WriteLine("Inserisci la tuo nome di telefono: ");
+        int cell = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(email);
+    }
+
+    inserisciDati();
+    */
+}
